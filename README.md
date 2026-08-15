@@ -290,6 +290,23 @@ Each project gives me a chance to explore something new, understand a problem mo
 
 ---
 
+# 🐍 Contribution Quest
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/115vyshnavi/115vyshnavi/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/115vyshnavi/115vyshnavi/output/github-snake.svg">
+
+  <img src="https://raw.githubusercontent.com/115vyshnavi/115vyshnavi/output/github-snake.svg" alt="GitHub Contribution Snake">
+</picture>
+
+<br><br>
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=2500&pause=900&color=6C63FF&center=true&vCenter=true&width=650&lines=Every+contribution+adds+to+the+journey.;Keep+building.+Keep+experimenting.+Keep+growing.+🚀">
+
+</div>
+
 # 📊 GitHub Activity
 
 <div align="center">
