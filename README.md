@@ -43,7 +43,7 @@ I enjoy **solving problems, experimenting with new technologies, and learning by
 ### 💻 Languages
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,cpp,js,html,css&theme=dark"/>
+  <img src="https://skillicons.dev/icons?i=python,js,html,css&theme=dark"/>
 </p>
 
 ### 🤖 AI & Generative AI
@@ -63,7 +63,7 @@ I enjoy **solving problems, experimenting with new technologies, and learning by
 ### 🌐 Development
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,fastapi,nodejs&theme=dark"/>
+  <img src="https://skillicons.dev/icons?i=react,tailwind,fastapi,nodejs&theme=dark"/>
 </p>
 
 ### 🗄️ Data & Backend
@@ -75,7 +75,7 @@ I enjoy **solving problems, experimenting with new technologies, and learning by
 ### ☁️ Tools
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=git,github,docker,gcp,vscode,postman&theme=dark"/>
+  <img src="https://skillicons.dev/icons?i=git,github,docker,gcp,vscode&theme=dark"/>
 </p>
 
 
