@@ -1,245 +1,288 @@
 <div align="center">
 
-# VUDDOJU VYSHNAVI
-
-### AI/ML Engineer · Generative AI · Software Engineering
-
-**Building intelligent systems, experimenting with new ideas, and turning them into working software.**
+<img src="https://capsule-render.vercel.app/api?type=waving&height=180&section=header&text=VYSHNAVI&fontSize=52&fontAlignY=36&animation=fadeIn&color=0:0D1117,100:161B22&fontColor=58A6FF"/>
 
 <br>
 
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=58A6FF&center=true&vCenter=true&width=850&lines=AI%2FML+Engineer;Generative+AI+%C2%B7+Full-Stack+Development;Building+Intelligent+Applications;Turning+Ideas+Into+Working+Systems"/>
+
+<br><br>
+
 <a href="https://github.com/115vyshnavi">
-  <img src="https://img.shields.io/badge/GitHub-115vyshnavi-161B22?style=flat-square&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub-115vyshnavi-161B22?style=flat-square&logo=github&logoColor=white"/>
 </a>
 &nbsp;
 <a href="https://www.linkedin.com/in/vyshnavi-vuddoju/">
-  <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white"/>
+<img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white"/>
 </a>
 &nbsp;
-<a href="YOUR_LEETCODE_PROFILE_URL">
-  <img src="https://img.shields.io/badge/LeetCode-Profile-FFA116?style=flat-square&logo=leetcode&logoColor=white"/>
+<a href="https://leetcode.com/u/vyshnavi115/">
+<img src="https://img.shields.io/badge/LeetCode-vyshnavi115-FFA116?style=flat-square&logo=leetcode&logoColor=white"/>
 </a>
+&nbsp;
+<a href="https://www.hackerrank.com/profile/vyshnavivuddoju">
+<img src="https://img.shields.io/badge/HackerRank-vyshnavivuddoju-00EA64?style=flat-square&logo=hackerrank&logoColor=white"/>
+</a>
+
+<br><br>
+
+<img src="https://komarev.com/ghpvc/?username=115vyshnavi&style=flat-square&color=58A6FF&label=PROFILE+VIEWS"/>
 
 </div>
 
 ---
 
-## About
+## 👩🏻‍💻 About Me
 
-I'm a **Computer Science Engineering student** focused on **AI/ML, Generative AI, and full-stack software development**.
+<div align="center">
 
-I enjoy solving problems, understanding how systems work, experimenting with new technologies, and building practical applications around what I learn.
+### Computer Science Engineering Student • AI/ML • Generative AI
 
-My approach is simple:
+</div>
 
-**Understand → Experiment → Build → Improve**
+I'm focused on building **AI-powered applications and modern software systems**, with interests spanning **Machine Learning, Generative AI, RAG, intelligent workflows, and full-stack development**.
 
----
+I enjoy solving problems, understanding how things work, experimenting with new technologies, and turning ideas into practical software.
 
-## Currently Building
+<div align="center">
 
-### AI-Driven Self-Healing Software Infrastructure
+`Understand` → `Experiment` → `Build` → `Improve`
 
-An intelligent infrastructure system designed to:
-
-* monitor application and system health
-* detect abnormal behavior
-* predict potential failures
-* identify possible root causes
-* trigger automated recovery actions
-* validate whether recovery was successful
-
-**Focus:** AI/ML · Monitoring · Anomaly Detection · Automation · Backend Systems
+</div>
 
 ---
 
-## Selected Work
+# 🛠️ Tech Stack
 
-### NeuralHire AI
+### 💻 Languages
 
-**AI-powered video resume & recruitment platform**
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,cpp,js,html,css&theme=dark" />
+</p>
 
-A recruitment platform exploring AI-assisted video resume analysis, candidate evaluation, and intelligent hiring workflows.
+### 🤖 AI / ML
 
-`Generative AI` `AI Workflows` `Full-Stack`
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,tensorflow,pytorch&theme=dark" />
+</p>
 
----
+<p align="center">
+  <img src="https://img.shields.io/badge/Generative%20AI-161B22?style=for-the-badge&logoColor=58A6FF"/>
+  <img src="https://img.shields.io/badge/NLP-161B22?style=for-the-badge&logoColor=58A6FF"/>
+  <img src="https://img.shields.io/badge/RAG-161B22?style=for-the-badge&logoColor=58A6FF"/>
+  <img src="https://img.shields.io/badge/LangChain-161B22?style=for-the-badge&logoColor=58A6FF"/>
+  <img src="https://img.shields.io/badge/Prompt%20Engineering-161B22?style=for-the-badge&logoColor=58A6FF"/>
+</p>
 
-### PHANTOM OS
+### 🌐 Development
 
-**Browser-based spatial computing system**
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,fastapi,nodejs&theme=dark" />
+</p>
 
-An experimental computing interface combining hand-gesture interaction, voice commands, and immersive browser-based experiences.
+### 🗄️ Data & Backend
 
-`JavaScript` `MediaPipe` `Web APIs` `Spatial Computing`
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=postgres,supabase,firebase&theme=dark" />
+</p>
 
----
+### ☁️ Tools & Platforms
 
-### AURALIVAIS
-
-**AI-powered fashion e-commerce platform**
-
-An intelligent fashion platform combining AI-assisted styling with an interactive shopping experience and backend/cloud infrastructure.
-
-`FastAPI` `AI` `Docker` `Google Cloud`
-
----
-
-## Experience
-
-**Agentic AI Intern — Innomatics Research Labs**
-`Feb 2026 – May 2026`
-
-Worked on AI-powered applications involving **FastAPI, LangChain, RAG, and Prompt Engineering**, with a focus on intelligent workflows and contextual AI systems.
-
-**AI & Prompt Engineering Intern — VaultofCodes**
-`Jul 2025 – Aug 2025`
-
-Worked on AI-assisted applications while exploring **Generative AI, NLP, and Prompt Engineering**.
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=git,github,docker,gcp,vscode,postman&theme=dark" />
+</p>
 
 ---
 
-## Technical Focus
+# 🚀 Featured Projects
 
 <table>
 <tr>
-<td valign="top" width="50%">
 
-### AI / ML
+<td width="50%" valign="top">
 
-* Generative AI
-* NLP
-* RAG
-* LangChain
-* Prompt Engineering
-* AI Workflows
-* Machine Learning
+## 🤖 NeuralHire AI
 
-</td>
-<td valign="top" width="50%">
+**AI-powered video resume & recruitment platform**
 
-### Software Engineering
+AI-assisted recruitment platform exploring video resume analysis, candidate evaluation, personality insights, and intelligent hiring workflows.
 
-* Python
-* C++
-* JavaScript
-* React / Next.js
-* FastAPI
-* REST APIs
-* SQL
+`Generative AI` `React` `Next.js`
 
 </td>
+
+<td width="50%" valign="top">
+
+## 👻 PHANTOM OS
+
+**Browser-based spatial computing system**
+
+Experimental computing environment combining hand gestures, voice interaction, and immersive browser interfaces.
+
+`JavaScript` `MediaPipe` `Web APIs`
+
+</td>
+
 </tr>
 
 <tr>
-<td valign="top" width="50%">
 
-### Data & Backend
+<td width="50%" valign="top">
 
-* PostgreSQL
-* Firebase
-* Supabase
-* Pandas
-* NumPy
-* Scikit-learn
+## 👗 AURALIVAIS
 
-</td>
-<td valign="top" width="50%">
+**AI-powered fashion e-commerce platform**
 
-### Tools & Platforms
+AI-assisted fashion experience combining intelligent styling with an interactive shopping experience and cloud-backed infrastructure.
 
-* Git / GitHub
-* Docker
-* Google Colab
-* VS Code
-* Google Cloud
+`FastAPI` `AI` `Docker` `Google Cloud`
 
 </td>
+
+<td width="50%" valign="top">
+
+## 🛡️ AI Systems & Experiments
+
+Exploring practical applications across **RAG, AI agents, intelligent automation, NLP, and full-stack AI systems**.
+
+`Python` `LangChain` `RAG` `LLMs`
+
+</td>
+
 </tr>
 </table>
 
 ---
 
-## Problem Solving
+# 💼 Experience
 
-I’m actively strengthening my **Data Structures & Algorithms** skills alongside AI/ML development.
+### 🤖 Agentic AI Intern
+**Innomatics Research Labs** · `Feb 2026 – May 2026`
 
-### Coding Profiles
+Worked on AI-powered applications and intelligent workflows using:
 
-<a href="YOUR_LEETCODE_PROFILE_URL">LeetCode</a> · <a href="YOUR_HACKERRANK_PROFILE_URL">HackerRank</a>
+`FastAPI` `LangChain` `RAG` `Prompt Engineering`
 
----
+### ✨ AI & Prompt Engineering Intern
+**VaultofCodes** · `Jul 2025 – Aug 2025`
 
-## Certifications
+Worked on AI-assisted applications involving:
 
-* **Generative AI Workshop** — Infosys Springboard / IIT Hyderabad
-* **Human Computer Interaction** — NPTEL — 93%
-* **AWS S3 Basics** — Coursera
-* **Machine Learning with Python** — Cognitive Class
-* **Python Programming** — Infosys Springboard
+`Generative AI` `NLP` `Prompt Engineering`
 
 ---
 
-## Contribution Arcade
-
-<p align="center">
-
-<!-- Pac-Man -->
-
-<picture>
-  <source media="(prefers-color-scheme: dark)"
-          srcset="https://raw.githubusercontent.com/115vyshnavi/115vyshnavi/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)"
-          srcset="https://raw.githubusercontent.com/115vyshnavi/115vyshnavi/output/pacman-contribution-graph.svg">
-  <img alt="Pac-Man contribution graph"
-       src="https://raw.githubusercontent.com/115vyshnavi/115vyshnavi/output/pacman-contribution-graph.svg">
-</picture>
-
-</p>
-
-<p align="center">
-
-<!-- Breakout -->
-
-<picture>
-  <source media="(prefers-color-scheme: dark)"
-          srcset="https://raw.githubusercontent.com/115vyshnavi/115vyshnavi/output/breakout-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)"
-          srcset="https://raw.githubusercontent.com/115vyshnavi/115vyshnavi/output/breakout-contribution-graph.svg">
-  <img alt="Breakout contribution graph"
-       src="https://raw.githubusercontent.com/115vyshnavi/115vyshnavi/output/breakout-contribution-graph.svg">
-</picture>
-
-</p>
-
----
-
-## GitHub Activity
+# 🧩 Problem Solving
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=115vyshnavi&show_icons=true&hide_border=true&rank_icon=github&theme=transparent" width="48%"/>
+<a href="https://leetcode.com/u/vyshnavi115/">
+<img src="https://img.shields.io/badge/LeetCode-vyshnavi115-FFA116?style=for-the-badge&logo=leetcode&logoColor=white"/>
+</a>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=115vyshnavi&layout=compact&hide_border=true&theme=transparent" width="48%"/>
+<a href="https://www.hackerrank.com/profile/vyshnavivuddoju">
+<img src="https://img.shields.io/badge/HackerRank-vyshnavivuddoju-00EA64?style=for-the-badge&logo=hackerrank&logoColor=white"/>
+</a>
 
 <br><br>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=115vyshnavi&theme=github-compact&hide_border=true&area=true" width="95%"/>
+<sub>Strengthening Data Structures & Algorithms with Python.</sub>
 
 </div>
 
 ---
 
-## Connect
+# 🏆 Certifications
 
 <div align="center">
 
-<a href="https://github.com/115vyshnavi">GitHub</a>
-  ·   <a href="https://www.linkedin.com/in/vyshnavi-vuddoju/">LinkedIn</a>
-  ·   <a href="YOUR_LEETCODE_PROFILE_URL">LeetCode</a>
+| Certification | Platform |
+| :--- | :--- |
+| Generative AI Workshop — IIT Hyderabad | Infosys Springboard |
+| Human Computer Interaction — 93% | NPTEL |
+| AWS S3 Basics | Coursera |
+| Machine Learning with Python | Cognitive Class |
+| Python Programming | Infosys Springboard |
+
+</div>
+
+---
+
+# 🎮 Contribution Arcade
+
+<div align="center">
+
+### `INSERT COIN • KEEP BUILDING`
+
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/115vyshnavi/115vyshnavi/output/galaga-contribution-graph-dark.svg">
+
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/115vyshnavi/115vyshnavi/output/galaga-contribution-graph.svg">
+
+  <img
+    src="https://raw.githubusercontent.com/115vyshnavi/115vyshnavi/output/galaga-contribution-graph.svg"
+    alt="Galaga contribution graph">
+</picture>
+
+</div>
+
+---
+
+# 📊 GitHub Activity
+
+<div align="center">
+
+<img
+  src="https://github-readme-stats.vercel.app/api?username=115vyshnavi&show_icons=true&hide_border=true&rank_icon=github&theme=transparent&title_color=58A6FF&icon_color=58A6FF"
+  width="48%"
+/>
+
+<img
+  src="https://github-readme-stats.vercel.app/api/top-langs/?username=115vyshnavi&layout=compact&hide_border=true&theme=transparent&title_color=58A6FF"
+  width="48%"
+/>
 
 <br><br>
 
-<sub>Build things. Break things. Understand them. Build them better.</sub>
+<img
+  src="https://github-readme-activity-graph.vercel.app/graph?username=115vyshnavi&bg_color=00000000&color=58A6FF&line=58A6FF&point=FFFFFF&area=true&hide_border=true"
+  width="95%"
+/>
+
+</div>
+
+---
+
+# 🌐 Connect
+
+<div align="center">
+
+<a href="https://github.com/115vyshnavi">
+<img src="https://img.shields.io/badge/GitHub-115vyshnavi-161B22?style=flat-square&logo=github&logoColor=white"/>
+</a>
+
+<a href="https://www.linkedin.com/in/vyshnavi-vuddoju/">
+<img src="https://img.shields.io/badge/LinkedIn-Vyshnavi%20Vuddoju-0A66C2?style=flat-square&logo=linkedin&logoColor=white"/>
+</a>
+
+<a href="https://leetcode.com/u/vyshnavi115/">
+<img src="https://img.shields.io/badge/LeetCode-vyshnavi115-FFA116?style=flat-square&logo=leetcode&logoColor=white"/>
+</a>
+
+<a href="https://www.hackerrank.com/profile/vyshnavivuddoju">
+<img src="https://img.shields.io/badge/HackerRank-vyshnavivuddoju-00EA64?style=flat-square&logo=hackerrank&logoColor=white"/>
+</a>
+
+<br><br>
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&duration=3000&pause=1000&color=8B949E&center=true&vCenter=true&width=650&lines=Build+with+curiosity.;Learn+by+experimenting.;Improve+with+every+iteration."/>
+
+<br>
+
+<sub>⚡ Building intelligent systems, one experiment at a time.</sub>
 
 </div>
