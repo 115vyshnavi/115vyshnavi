@@ -232,12 +232,6 @@ Worked on AI-assisted applications involving:
 
 <div align="center">
 
-<img src="./profile/stats.svg" width="48%" alt="GitHub statistics"/>
-
-<img src="./profile/top-langs.svg" width="48%" alt="Top programming languages"/>
-
-<br><br>
-
 <img
   src="https://github-readme-activity-graph.vercel.app/graph?username=115vyshnavi&bg_color=00000000&color=58A6FF&line=58A6FF&point=FFFFFF&area=true&hide_border=true"
   width="95%"
