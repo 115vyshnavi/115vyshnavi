@@ -20,251 +20,134 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
-      # -----------------------------
-      # 1. Get repository
-      # -----------------------------
-
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # -----------------------------
-      # 2. Generate streak card
-      # -----------------------------
-
-      - name: Generate streak card
+      - name: Generate GitHub Streak
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-
           mkdir -p profile
 
           python - <<'PY'
-
+          import json
+          import os
           import urllib.request
-          import re
-          from datetime import date, timedelta
-
-
-          # ==========================================
-          # YOUR GITHUB USERNAME
-          # ==========================================
+          from datetime import date, datetime, timedelta
+          from zoneinfo import ZoneInfo
 
           username = "115vyshnavi"
 
+          query = """
+          query($login: String!) {
+            user(login: $login) {
+              contributionsCollection {
+                contributionCalendar {
+                  totalContributions
+                  weeks {
+                    contributionDays {
+                      date
+                      contributionCount
+                    }
+                  }
+                }
+              }
+            }
+          }
+          """
 
-          # ==========================================
-          # GET GITHUB CONTRIBUTION CALENDAR
-          # ==========================================
-
-          url = f"https://github.com/users/{username}/contributions"
+          payload = json.dumps({
+              "query": query,
+              "variables": {
+                  "login": username
+              }
+          }).encode("utf-8")
 
           request = urllib.request.Request(
-              url,
+              "https://api.github.com/graphql",
+              data=payload,
               headers={
-                  "User-Agent": "Mozilla/5.0"
+                  "Authorization": f"Bearer {os.environ['GH_TOKEN']}",
+                  "Content-Type": "application/json",
+                  "User-Agent": "github-streak-generator"
               }
           )
 
-          html = urllib.request.urlopen(request).read().decode("utf-8")
+          with urllib.request.urlopen(request) as response:
+              result = json.loads(response.read().decode("utf-8"))
 
+          if "errors" in result:
+              raise RuntimeError(result["errors"])
 
-          # ==========================================
-          # READ CONTRIBUTION DAYS
-          # ==========================================
+          calendar = result["data"]["user"]["contributionsCollection"]["contributionCalendar"]
 
           contributions = {}
 
+          for week in calendar["weeks"]:
+              for day in week["contributionDays"]:
+                  contributions[day["date"]] = day["contributionCount"]
 
-          # Get every contribution calendar cell
-          cells = re.findall(
-              r"<td\b[^>]*>",
-              html
-          )
+          # Use India time so the streak matches your local GitHub day.
+          today = datetime.now(ZoneInfo("Asia/Kolkata")).date()
 
+          def count_for(day):
+              return contributions.get(day.isoformat(), 0)
 
-          for cell in cells:
-
-              # Get date
-              date_match = re.search(
-                  r'data-date="([^"]+)"',
-                  cell
-              )
-
-              if not date_match:
-                  continue
-
-              day = date_match.group(1)
-
-
-              # Get contribution count
-              #
-              # Example:
-              # aria-label="5 contributions on August 20, 2026"
-              #
-
-              count_match = re.search(
-                  r'aria-label="(\d+)\s+contribution',
-                  cell,
-                  re.IGNORECASE
-              )
-
-              if count_match:
-
-                  count = int(
-                      count_match.group(1)
-                  )
-
-              else:
-
-                  count = 0
-
-
-              contributions[day] = count
-
-
-          # ==========================================
-          # DEBUG INFORMATION
-          # ==========================================
-
-          print(
-              "Contribution days detected:",
-              len(contributions)
-          )
-
-
-          print("\nRecent contribution days:")
-
-
-          for day in sorted(contributions)[-20:]:
-
-              print(
-                  day,
-                  "->",
-                  contributions[day]
-              )
-
-
-          # ==========================================
-          # DATE HELPER
-          # ==========================================
-
-          today = date.today()
-
-
-          def has_contribution(day):
-
-              return contributions.get(
-                  day.isoformat(),
-                  0
-              ) > 0
-
-
-          # ==========================================
+          # -------------------------
           # CURRENT STREAK
-          # ==========================================
+          # -------------------------
 
-          current_streak = 0
+          if count_for(today) > 0:
+              current_streak = 0
+              day = today
 
-          day = today
-
-
-          while has_contribution(day):
-
-              current_streak += 1
-
-              day -= timedelta(days=1)
-
-
-          # If today's contribution has not appeared
-          # on GitHub yet, start from yesterday.
-
-          if current_streak == 0:
-
-              day = today - timedelta(days=1)
-
-
-              while has_contribution(day):
-
+              while count_for(day) > 0:
                   current_streak += 1
-
                   day -= timedelta(days=1)
 
+          else:
+              yesterday = today - timedelta(days=1)
 
-          # ==========================================
-          # LONGEST STREAK
-          # ==========================================
+              if count_for(yesterday) > 0:
+                  current_streak = 0
+                  day = yesterday
 
-          longest_streak = 0
-
-          running = 0
-
-
-          # GitHub contribution calendar gives roughly
-          # one year of contribution history.
-
-          start = today - timedelta(days=370)
-
-          day = start
-
-
-          while day <= today:
-
-              if has_contribution(day):
-
-                  running += 1
-
-                  longest_streak = max(
-                      longest_streak,
-                      running
-                  )
+                  while count_for(day) > 0:
+                      current_streak += 1
+                      day -= timedelta(days=1)
 
               else:
+                  current_streak = 0
 
+          # -------------------------
+          # LONGEST STREAK
+          # -------------------------
+
+          longest_streak = 0
+          running = 0
+
+          days = sorted(contributions.keys())
+
+          for day_string in days:
+              day = date.fromisoformat(day_string)
+
+              if count_for(day) > 0:
+                  running += 1
+                  longest_streak = max(longest_streak, running)
+              else:
                   running = 0
 
+          # -------------------------
+          # TOTAL CONTRIBUTIONS
+          # -------------------------
 
-              day += timedelta(days=1)
+          total = calendar["totalContributions"]
 
-
-          # ==========================================
-          # TOTAL CONTRIBUTION DAYS
-          # ==========================================
-
-          total_contribution_days = sum(
-              1
-              for count in contributions.values()
-              if count > 0
-          )
-
-
-          # ==========================================
-          # PRINT RESULTS
-          # ==========================================
-
-          print("\n==============================")
-
-          print(
-              "Current streak:",
-              current_streak
-          )
-
-          print(
-              "Longest streak:",
-              longest_streak
-          )
-
-          print(
-              "Contribution days:",
-              total_contribution_days
-          )
-
-          print("==============================\n")
-
-
-          # ==========================================
+          # -------------------------
           # CREATE SVG
-          # ==========================================
+          # -------------------------
 
-          svg_output = f'''<svg xmlns="http://www.w3.org/2000/svg"
+          svg = f'''<svg xmlns="http://www.w3.org/2000/svg"
           width="900"
           height="220"
           viewBox="0 0 900 220">
@@ -274,7 +157,6 @@ jobs:
               height="220"
               rx="18"
               fill="#0D1117"/>
-
 
           <text
               x="450"
@@ -287,16 +169,12 @@ jobs:
               GitHub Streak
           </text>
 
-
           <line
               x1="70"
               y1="65"
               x2="830"
               y2="65"
               stroke="#30363D"/>
-
-
-          <!-- CURRENT STREAK -->
 
           <text
               x="150"
@@ -309,7 +187,6 @@ jobs:
               {current_streak}
           </text>
 
-
           <text
               x="150"
               y="140"
@@ -319,9 +196,6 @@ jobs:
               font-size="15">
               Current Streak
           </text>
-
-
-          <!-- LONGEST STREAK -->
 
           <text
               x="450"
@@ -334,7 +208,6 @@ jobs:
               {longest_streak}
           </text>
 
-
           <text
               x="450"
               y="140"
@@ -345,9 +218,6 @@ jobs:
               Longest Streak
           </text>
 
-
-          <!-- CONTRIBUTION DAYS -->
-
           <text
               x="750"
               y="110"
@@ -356,9 +226,8 @@ jobs:
               font-family="Arial, sans-serif"
               font-size="38"
               font-weight="bold">
-              {total_contribution_days}
+              {total}
           </text>
-
 
           <text
               x="750"
@@ -367,9 +236,8 @@ jobs:
               fill="#8B949E"
               font-family="Arial, sans-serif"
               font-size="15">
-              Contribution Days
+              Contributions
           </text>
-
 
           <text
               x="450"
@@ -378,54 +246,38 @@ jobs:
               fill="#8B949E"
               font-family="Arial, sans-serif"
               font-size="13">
-              Automatically updated by GitHub Actions
+              Updated automatically by GitHub Actions
           </text>
-
 
           </svg>
           '''
-
-
-          # ==========================================
-          # SAVE SVG
-          # ==========================================
 
           with open(
               "profile/github-streak.svg",
               "w",
               encoding="utf-8"
           ) as file:
+              file.write(svg)
 
-              file.write(svg_output)
-
-
+          print("======================================")
+          print(f"Today:              {today}")
+          print(f"Today's commits:    {count_for(today)}")
+          print(f"Current streak:     {current_streak}")
+          print(f"Longest streak:     {longest_streak}")
+          print(f"Total contributions:{total}")
+          print("======================================")
           PY
-
-
-      # -----------------------------
-      # 3. Commit updated SVG
-      # -----------------------------
 
       - name: Commit updated streak
         run: |
-
           git config user.name "github-actions[bot]"
-
-          git config user.email \
-            "41898282+github-actions[bot]@users.noreply.github.com"
-
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add profile/github-streak.svg
 
-
           if git diff --cached --quiet; then
-
-            echo "No streak changes to commit."
-
+            echo "No changes to commit."
           else
-
             git commit -m "Update GitHub streak"
-
             git push
-
           fi
