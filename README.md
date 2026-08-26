@@ -242,7 +242,7 @@ Worked on AI-assisted applications involving:
 <div align="center">
 
 <img
-  src="https://streak-stats.demolab.com/?user=115vyshnavi&theme=dark&hide_border=true&background=00000000&ring=8B9DFF&fire=8B9DFF&currStreakLabel=8B9DFF&sideLabels=8B9DFF"
+  src="./profile/github-streak.svg"
   width="95%"
   alt="GitHub streak statistics"
 />
