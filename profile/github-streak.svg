@@ -9,7 +9,6 @@ viewBox="0 0 900 220">
     rx="18"
     fill="#0D1117"/>
 
-
 <text
     x="450"
     y="45"
@@ -21,16 +20,12 @@ viewBox="0 0 900 220">
     GitHub Streak
 </text>
 
-
 <line
     x1="70"
     y1="65"
     x2="830"
     y2="65"
     stroke="#30363D"/>
-
-
-<!-- CURRENT STREAK -->
 
 <text
     x="150"
@@ -40,9 +35,8 @@ viewBox="0 0 900 220">
     font-family="Arial, sans-serif"
     font-size="38"
     font-weight="bold">
-    0
+    8
 </text>
-
 
 <text
     x="150"
@@ -54,9 +48,6 @@ viewBox="0 0 900 220">
     Current Streak
 </text>
 
-
-<!-- LONGEST STREAK -->
-
 <text
     x="450"
     y="110"
@@ -65,9 +56,8 @@ viewBox="0 0 900 220">
     font-family="Arial, sans-serif"
     font-size="38"
     font-weight="bold">
-    0
+    8
 </text>
-
 
 <text
     x="450"
@@ -79,9 +69,6 @@ viewBox="0 0 900 220">
     Longest Streak
 </text>
 
-
-<!-- CONTRIBUTION DAYS -->
-
 <text
     x="750"
     y="110"
@@ -90,9 +77,8 @@ viewBox="0 0 900 220">
     font-family="Arial, sans-serif"
     font-size="38"
     font-weight="bold">
-    0
+    91
 </text>
-
 
 <text
     x="750"
@@ -101,9 +87,8 @@ viewBox="0 0 900 220">
     fill="#8B949E"
     font-family="Arial, sans-serif"
     font-size="15">
-    Contribution Days
+    Contributions
 </text>
-
 
 <text
     x="450"
@@ -112,8 +97,7 @@ viewBox="0 0 900 220">
     fill="#8B949E"
     font-family="Arial, sans-serif"
     font-size="13">
-    Automatically updated by GitHub Actions
+    Updated automatically by GitHub Actions
 </text>
-
 
 </svg>
