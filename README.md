@@ -229,20 +229,22 @@ Worked on AI-assisted applications involving:
 </div>
 
 
+---
+
 <!-- =========================
-     GITHUB ACTIVITY
+     GITHUB STREAK
 ========================= -->
 
 ---
 
-# 📊 GitHub Activity
+# 🔥 GitHub Streak
 
 <div align="center">
 
 <img
-  src="https://github-readme-activity-graph.vercel.app/graph?username=115vyshnavi&bg_color=00000000&color=8B9DFF&line=8B9DFF&point=FFFFFF&area=true&hide_border=true"
+  src="https://streak-stats.demolab.com/?user=115vyshnavi&theme=dark&hide_border=true&background=00000000&ring=8B9DFF&fire=8B9DFF&currStreakLabel=8B9DFF&sideLabels=8B9DFF"
   width="95%"
-  alt="GitHub contribution activity"
+  alt="GitHub streak statistics"
 />
 
 </div>
